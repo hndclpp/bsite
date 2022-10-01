@@ -1,0 +1,217 @@
+@import './base.less';
+
+@vw: 3.75vw;
+@color: #fb7299;
+
+// header fixed
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; // width: 100%;
+    height: (84 / @vw);
+
+
+    background-color: #fff;
+    // 提高优先级防止被content覆盖
+    z-index: 1;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: (44 / @vw);
+        padding: 0 (12 / @vw) 0 (18 / @vw);
+
+        .left {
+            .iconfont {
+                font-size: (28 / @vw);
+                color: @color;
+            }
+        }
+
+        .right {
+            display: flex;
+
+            .iconfont {
+                font-size: (22 / @vw);
+                color: #ccc;
+            }
+
+            .login {
+                width: (24 / @vw);
+                height: (24 / @vw);
+                margin-left: (24 / @vw);
+            }
+
+            .download {
+                width: (72 / @vw);
+                height: (24 / @vw);
+                margin-left: (24 / @vw);
+
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+
+
+        height: (40 / @vw);
+        border-bottom: 1px solid #eee;
+        // background-color: skyblue;
+
+        .tab {
+            ul {
+                display: flex;
+
+                li {
+
+                    padding: 0 (16 / @vw);
+
+                    a {
+                        display: block;
+
+                        // 稍高 便于加底框
+                        line-height: (38 / @vw);
+                        font-size: (14 / @vw);
+
+                        // 撑开盒子加底色
+                        height: (38 / @vw);
+
+                        &.current {
+                            color: @color;
+                            border-bottom: (2 / @vw) solid @color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .more {
+            display: flex;
+
+            a {
+                width: (40 / @vw);
+                height: (40 / @vw);
+                text-align: center;
+                line-height: (40 / @vw);
+
+                .iconfont {
+                    font-size: (22 / @vw);
+                    color: #aaa;
+                }
+            }
+        }
+    }
+}
+
+// content
+.video-content {
+    padding: (85 / @vw) (5 / @vw) 0;
+
+    .video-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            flex: 50%; //width: 50%;
+            padding: (8 / @vw) (5 / @vw);
+            // background-color: pink;
+            font-size: (12 / @vw);
+
+            .pic {
+                position: relative;
+                border-radius: (2 / @vw);
+                overflow: hidden;
+
+                .count {
+
+
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: space-between;
+                    color: #fff;
+
+                    padding: (8 / @vw);
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), transparent);
+
+                    i {
+                        vertical-align: bottom;
+                    }
+
+                }
+            }
+
+            .title {
+                margin-top: (5 / @vw);
+            }
+        }
+    }
+}
+
+//float fixed
+.openapp {
+    position: fixed;
+    bottom: (28 / @vw);
+    height: (38 / @vw);
+    width: (351 / @vw);
+
+    margin: 0 (12 / @vw);
+    background-color: @color;
+
+    border-radius: (25 / @vw);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .iconfont {
+        vertical-align: middle;
+        padding-right: (10 / @vw);
+    }
+
+    span {
+        font-size: (14 / @vw);
+    }
+}
+
+//footer 
+.list-view__state {
+    height: (159 / @vw);
+    margin-top: (20 / @vw);
+
+    .list-view__state--no-more {
+        height: (39 / @vw);
+
+        .m-home-no-more {
+            text-align: center;
+            font-size: (14 / @vw);
+            color: #999;
+            line-height: (39 / @vw);
+
+            padding-bottom: (20 / @vw);
+        }
+
+        .m-footer {
+            height: (120 / @vw);
+            padding: (12 / @vw) (5 / @vw);
+            background-color: #f4f4f4;
+
+            p {
+                text-align: center;
+                color: #9499a0;
+                font-size: (12 / @vw);
+                line-height: (24 / @vw);
+            }
+        }
+    }
+}
