@@ -1,4 +1,5 @@
 @vw: 3.75vw;
+@rootSize: 37.5rem;
 @color: #fb7299;
 
 * {
@@ -6,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html,
 body {
@@ -37,27 +39,31 @@ body {
 
         .people-22 {
             position: absolute;
-            bottom: (30 / @vw);
+            bottom: (30 / @rootSize);
             left: 0;
 
-            width: (160 / @vw);
+            width: (160 / @rootSize);
         }
 
         .people-33 {
             position: absolute;
             top: 0;
             right: 0;
-            width: (120 / @vw);
+            width: (120 / @rootSize);
         }
 
         .logo {
-            height: (48 / @vw);
+            height: (48 / @rootSize);
+            z-index: 1;
         }
 
         a {
+            z-index: 1;
+
             .download {
-                margin-top: (30 / @vw);
-                width: (270 / @vw);
+                margin-top: (30 / @rootSize);
+                width: (270 / @rootSize);
+
             }
         }
 
