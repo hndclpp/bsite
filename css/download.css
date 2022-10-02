@@ -3,14 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
-body,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .app {
   width: 100%;
   height: 100%;
 }
-html .main,
-body .main,
+
 .app .main {
   position: relative;
   height: 100%;
@@ -21,29 +25,25 @@ body .main,
   background: url(../images/bg@2x.png);
   background-size: 100% 100%;
 }
-html .main .people-22,
-body .main .people-22,
+
 .app .main .people-22 {
   position: absolute;
   bottom: 8vw;
   left: 0;
   width: 42.66666667vw;
 }
-html .main .people-33,
-body .main .people-33,
+
 .app .main .people-33 {
   position: absolute;
   top: 0;
   right: 0;
   width: 32vw;
 }
-html .main .logo,
-body .main .logo,
+
 .app .main .logo {
   height: 12.8vw;
 }
-html .main a .download,
-body .main a .download,
+
 .app .main a .download {
   margin-top: 8vw;
   width: 72vw;
