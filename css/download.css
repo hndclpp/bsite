@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  width: 100vw;
+  height: 177.86666667vw;
+}
+.app .main {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/bg@2x.png);
+  background-size: 100% 100%;
+  padding-bottom: 20vw;
+}
+.app .main .people-22 {
+  position: absolute;
+  bottom: 8vw;
+  left: 0;
+  width: 42.66666667vw;
+}
+.app .main .people-33 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32vw;
+}
+.app .main .logo {
+  height: 12.8vw;
+}
+.app .main a .download {
+  margin-top: 8vw;
+  width: 72vw;
+}

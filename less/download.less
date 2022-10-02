@@ -1,0 +1,59 @@
+@vw: 3.75vw;
+@color: #fb7299;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: (375 / @vw);
+    height: (667 / @vw);
+
+
+    .main {
+        position: relative;
+
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // text-align: center;
+
+        background: url(../images/bg@2x.png);
+        background-size: 100% 100%;
+
+        padding-bottom: (75 / @vw);
+
+        .people-22 {
+            position: absolute;
+            bottom: (30 / @vw);
+            left: 0;
+
+            width: (160 / @vw);
+        }
+
+        .people-33 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: (120 / @vw);
+        }
+
+        .logo {
+            height: (48 / @vw);
+        }
+
+        a {
+            .download {
+                margin-top: (30 / @vw);
+                width: (270 / @vw);
+            }
+        }
+
+    }
+}
